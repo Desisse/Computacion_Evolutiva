@@ -41,7 +41,7 @@ function mutacion(individuo, tasaMutacion) {
         let posicion2;
         do {
             posicion2 = Math.floor(Math.random() * individuo.length);
-        } while (posicion2 === posicion1); // Asegurar que la segunda posición sea diferente a la primera
+        } while (posicion2 === posicion1); 
         mutado = mutado.substring(0, posicion1) +
             (mutado[posicion1] === '0' ? '1' : '0') +
             mutado.substring(posicion1 + 1, posicion2) +
